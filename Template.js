@@ -61,7 +61,7 @@ function setup() {
 
   gen_background();
 
-  frameRate();
+  frameRate(20);
 
 }
 
@@ -80,16 +80,16 @@ function draw() {
     a = 1;
   }
   
-  randomSeed(width);
+  //randomSeed(width);
   noStroke();
   
-  for(let i = 0;i < 50;i++){
-    textSize(random(10,30));
+  for(let i = 0;i < 10;i++){
+    textSize(random(10,80));
     fill(random(colors));
     text(random(texts),random(windowWidth/7, windowWidth * 5/7),random(windowHeight/5 + 50,windowHeight/2 + windowHeight/4));
   }
-   img = get(width/2-(s/2),height/2-(s/2),s,s);
-  //img = get(width/(5)-(s/2),height/(5)-(s/2),s*2,s*5);
+  img = get(width/2-(s/2),height/2-(s/2),s,s);
+  //img = get(width/random(50)-(s/random(50)),height/random(5)-(s/random(50)),s*random(5),s*random(5));
   image(img,windowWidth * 1/7,windowHeight/5,windowWidth * 5/7,windowHeight*3/5);
  
  

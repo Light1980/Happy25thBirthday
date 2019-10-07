@@ -66,14 +66,14 @@ function setup() {
 }
 
 // Image Twisting Code adapted from https://www.openprocessing.org/sketch/437875
-let img,s = 50,a = 1,b = 5;
+let img,s = 50,a = 1,b = 10;
 function draw() {
   if(a == 1){
     s+=b;
   }else{
    s-=b; 
   }
-  if(s > 1000){
+  if(s > 2500){
     a = 0;
   }
   if(s < 50){
